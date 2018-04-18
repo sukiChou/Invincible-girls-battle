@@ -8,6 +8,8 @@
 |ID|![](https://github.com/sukiChou/Invincible-girls-battle/raw/master/WechatIMG766.png)|
 |---|---
 |ID|![](https://github.com/sukiChou/Invincible-girls-battle/raw/master/WechatIMG777.png)|
+|---|---
+|ID|![](https://github.com/sukiChou/Invincible-girls-battle/raw/master/WechatIMG78.png)|
 
 ****
 
