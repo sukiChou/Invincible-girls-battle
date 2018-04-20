@@ -201,17 +201,9 @@
 			<script src="assets/js/jquery.simplyscroll.min.js"></script>
 			<script src="assets/js/data.js"></script>
 			<script src="assets/js/my.js"></script>
-			<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 		<script>
-			   var bgAudio = document.getElementById('bgm');
-			    bgAudio.load();
-			    bgAudio.play();
-			    // 兼容在微信里自动播放
-			    document.addEventListener("WeixinJSBridgeReady", function () {
-				bgAudio.load();
-				bgAudio.play();
-			    }, false);
-			    });
+			document.getElementById('bgm').setAttribute('src', 'bgm.mp3')
+    			document.getElementById('bgm').play()
 		</script>
 	</body>
 </html>
