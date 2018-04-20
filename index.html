@@ -201,9 +201,21 @@
 			<script src="assets/js/jquery.simplyscroll.min.js"></script>
 			<script src="assets/js/data.js"></script>
 			<script src="assets/js/my.js"></script>
+			<script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
 		<script>
-			document.getElementById('bgm').setAttribute('src', 'bgm.mp3')
-    			document.getElementById('bgm').play()
+			wx.config({
+			  debug: false,
+			   appId: data.appid,
+			   timestamp: data.timestamp,
+			   nonceStr: data.noncestr,
+			   signature: data.signature,
+			   jsApiList: []
+			 })
+			 wx.ready(function() {
+			   // 在微信的ready中进行播放 不管成功配置与否 都会执行ready
+			   document.getElementById('bgm').setAttribute('src', 'bgm.mp3')
+			   document.getElementById('bgm').play()
+			 })
 		</script>
 	</body>
 </html>
